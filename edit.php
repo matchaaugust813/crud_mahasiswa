@@ -4,7 +4,7 @@ include "config.php";
 
 $id = $_GET['id'];
 
-$query = "SELECT * FROM crud_mahasiswa WHERE id = '$id'";
+$query = "SELECT * FROM crud_mhs WHERE id = '$id'";
 
 $data = mysqli_query($koneksi, $query);
 
