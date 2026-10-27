@@ -38,23 +38,31 @@ $row = mysqli_fetch_assoc($data);
         <div>
             <label>Nama</label><br>
             <input type="text" name="Nama"
-                   value="<?php echo htmlspecialchars($row['Nama']); ?>" required>
+                   value="<?php echo htmlspecialchars($row['nama']); ?>" required>
         </div>
 
         <br>
         
         <div>
             <label>NIM</label><br>
-            <input type="text" name="NIM"
-                   value="<?php echo htmlspecialchars($row['NIM']); ?>" required>
+            <input type="text" name="nim"
+                   value="<?php echo htmlspecialchars($row['nim']); ?>" required>
         </div>
 
         <br>
       
         <div>
-            <label>Alamat</label><br>
-            <input type="text" name="Alamat"
-                   value="<?php echo htmlspecialchars($row['Alamat']); ?>" required>
+            <label>Jurusan</label><br>
+            <input type="text" name="jurusan"
+                   value="<?php echo htmlspecialchars($row['jurusan']); ?>" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Angkatan</label><br>
+            <input type="text" name="angkatan"
+                   value="<?php echo htmlspecialchars($row['angkatan']); ?>" required>
         </div>
 
 
