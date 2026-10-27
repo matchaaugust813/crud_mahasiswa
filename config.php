@@ -1,0 +1,11 @@
+<?php
+
+$koneksi = mysqli_connect("localhost", "root", "", "db_mhs");
+
+if (!$koneksi) {
+    echo "Koneksi gagal: ";
+    die(mysqli_connect_error());
+
+}
+
+?>
