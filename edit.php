@@ -89,7 +89,7 @@ $row = mysqli_fetch_assoc($data);
 
     <br>
 
-    <a href="index.html">Kembali</a>
+    <a href="index.php">Kembali</a>
 
 </body>
 </html>
