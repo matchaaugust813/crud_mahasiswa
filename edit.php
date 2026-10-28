@@ -37,7 +37,7 @@ $row = mysqli_fetch_assoc($data);
 
         <div>
             <label>Nama</label><br>
-            <input type="text" name="Nama"
+            <input type="text" name="nama"
                    value="<?php echo htmlspecialchars($row['nama']); ?>" required>
         </div>
 
@@ -71,19 +71,19 @@ $row = mysqli_fetch_assoc($data);
             <select name="Prodi" required>
                 <option value="">-- Pilih Prodi --</option>
                 <option value="Teknik Informatika"
-                    <?php if ($row['Prodi'] == 'Teknik Informatika') echo 'selected'; ?>>
+                    <?php if ($row['angkatan'] == 'Teknik Informatika') echo 'selected'; ?>>
                     Teknik Informatika
                 </option>
                 <option value="Teknik Industri"
-                    <?php if ($row['Prodi'] == 'Teknik Industri') echo 'selected'; ?>>
+                    <?php if ($row['angkatan'] == 'Teknik Industri') echo 'selected'; ?>>
                     Teknik Industri
                 </option>
                 <option value="Teknik Sipil"
-                    <?php if ($row['Prodi'] == 'Teknik Sipil') echo 'selected'; ?>>
+                    <?php if ($row['angkatan'] == 'Teknik Sipil') echo 'selected'; ?>>
                     Teknik Sipil
                 </option>
                 <option value="Bisnis Digital"
-                    <?php if ($row['Prodi'] == 'Bisnis Digital') echo 'selected'; ?>>
+                    <?php if ($row['angkatan'] == 'Bisnis Digital') echo 'selected'; ?>>
                     Bisnis Digital
                 </option>
             </select>
