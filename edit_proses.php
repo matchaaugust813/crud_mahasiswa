@@ -1,5 +1,5 @@
 <?php
-include 'index.php';
+include 'config.php';
 
 //id
 //Nama
@@ -15,7 +15,7 @@ $angkatan = $_POST ['angkatan'];
 $nim = $_POST ['nim'];
 
 $query = mysqli_query(
-    $conn,
+    $koneksi,
     "UPDATE  tb_mhs
     SET id='$id', nama='$nama',jrursan='$jurusan', angkatan='$angkatan', nim='$nim' 
     WHERE id='$id'"
