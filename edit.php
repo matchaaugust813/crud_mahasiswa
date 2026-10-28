@@ -4,7 +4,7 @@ include "config.php";
 
 $id = $_GET['id'];
 
-$query = "SELECT * FROM db_mhs WHERE id = '$id'";
+$query = "SELECT * FROM tb_mhs WHERE id = '$id'";
 
 $data = mysqli_query($koneksi, $query);
 
